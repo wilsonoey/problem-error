@@ -1,0 +1,79 @@
+.detail-servicewith-auth-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.detail-servicewith-auth-fixed-header {
+  width: 100%;
+  display: flex;
+  z-index: 200;
+  box-shadow: 0px 0px 20px 0px rgba(17, 18, 38, 0.15);
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ab110b;
+}
+.detail-servicewith-auth-container1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.detail-servicewith-auth-story {
+  width: 100%;
+  display: flex;
+  max-width: 1320px;
+  grid-column: 3/11;
+  padding-top: var(--dl-space-space-tripleunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.detail-servicewith-auth-text {
+  color: #94a3b8ff;
+}
+.detail-servicewith-auth-text02 {
+  color: #94a3b8ff;
+}
+.detail-servicewith-auth-text03 {
+  color: #94a3b8ff;
+}
+.detail-servicewith-auth-text04 {
+  color: var(--dl-color-secondary-400);
+  font-size: 1.875rem;
+}
+.detail-servicewith-auth-image {
+  width: 100%;
+  box-shadow:  0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  margin-top: var(--dl-space-space-tripleunit);
+  object-fit: contain;
+  border-radius: var(--dl-radius-radius-radius75);
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.detail-servicewith-auth-text05 {
+  color: var(--dl-color-secondary-100);
+  font-weight: 300;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.detail-servicewith-auth-text06 {
+  font-weight: 400;
+  white-space: normal;
+}
+.detail-servicewith-auth-text09 {
+  font-weight: 400;
+  white-space: normal;
+}
+@media(max-width: 767px) {
+  .detail-servicewith-auth-story {
+    width: 100%;
+    padding-left: var(--dl-space-space-doubleunit);
+    padding-right: var(--dl-space-space-doubleunit);
+  }
+}
+@media(max-width: 479px) {
+  .detail-servicewith-auth-container1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
