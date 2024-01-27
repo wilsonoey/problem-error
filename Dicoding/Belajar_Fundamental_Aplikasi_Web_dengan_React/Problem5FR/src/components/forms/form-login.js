@@ -43,7 +43,7 @@ function FormLogin({ login }) {
         <Inputs
           objectinput="Password"
           type="password"
-          placeholder="Contoh: Test12345678"
+          placeholder=""
           value={password}
           onChange={onPasswordChange}
         />
