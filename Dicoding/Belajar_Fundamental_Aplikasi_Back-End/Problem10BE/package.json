@@ -1,0 +1,30 @@
+{
+  "name": "noderestfuljsonapi",
+  "version": "1.0.0",
+  "description": "Node Restful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "restful"
+  ],
+  "author": "Wilson Jonathan Oey",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "@hapi/vision": "^7.0.3",
+    "bcryptjs": "^2.4.3",
+    "codemirror": "^6.0.1",
+    "handlebars": "^4.7.8",
+    "nanoid": "^3.3.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mysql": "^2.18.1"
+  }
+}
