@@ -21,7 +21,7 @@ const routes = [
   },
   {
     method: 'PUT',
-    path: '/user',
+    path: '/user/{iduser}',
     handler: part.edituserkad,
     options: {
       auth: 'kamiada_jwt',
