@@ -1,0 +1,25 @@
+.edit-service-textinput {
+  color: rgba(148, 163, 184, 1);
+  width: 100%;
+  outline: 0;
+  padding: var(--dl-space-space-triplequarter);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  transition: 0.3s;
+  border-width: 2px;
+  border-radius: 4px;
+}
+.edit-service-textinput:focus {
+  color: var(--dl-color-secondary-500);
+  box-shadow: 0 0 0 2px#4AA4E3;
+}
+.edit-service-text2 {
+  color: rgba(100,116,139,1);
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: 0.25rem;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
