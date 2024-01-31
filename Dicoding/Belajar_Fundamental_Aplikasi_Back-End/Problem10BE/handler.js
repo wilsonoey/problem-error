@@ -137,9 +137,7 @@ async function getuserme(request, h) {
 
 async function editUser(request, h) {
   try {
-    const verify = request.state.refreshToken;
-    const verificator = TokenManager.verifyRefreshToken(verify);
-    const { iduser } = request.params;
+    const verificator = request.auth.credentials;
     const addOtherPayload = { ...request.payload };
     const hashPassword = await bcrypt.hash(addOtherPayload.passworduser, 10);
     const updatedat = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
@@ -150,7 +148,7 @@ async function editUser(request, h) {
     };
     const checkiduser = 'SELECT * FROM userskad WHERE iduser = ?';
     return new Promise((resolve, reject) => {
-      connection.query(checkiduser, iduser, async (erroriduser, resultsiduser) => {
+      connection.query(checkiduser, verificator.iduser, async (erroriduser, resultsiduser) => {
         const userchecker = resultsiduser[0];
         if (resultsiduser.length === 0) {
           resolve(h.response(notfound('User tidak ditemukan')).code(404));
@@ -185,7 +183,7 @@ async function editUser(request, h) {
                 }
               }
               updateQuery += ' WHERE iduser = ?';
-              values.push(iduser);
+              values.push(verificator.iduser);
               if ((data.passworduser !== verificator.passworduser)
                   || (data.emailuser !== verificator.emailuser)) {
                 await partAuth.deleteToken(verify);
@@ -204,9 +202,7 @@ async function editUser(request, h) {
                     await partAuth.addToken(refreshToken);
                     resolve(h.response(
                       successcreatedwithdata('User dan token berhasil diupdate', {accessToken, refreshToken})
-                    ).code(200).state(
-                      'refreshToken', refreshToken, { isSecure: variable.NODE_ENV === 'production' }
-                    ));
+                    ).code(200));
                   }
                 });
               } else if (((data.passworduser === verificator.passworduser)
@@ -356,7 +352,7 @@ async function addservicebyuser(request, h) {
 
 async function getallservice(_, h) {
   try {
-    const query = 'SELECT * FROM serviceskad';
+    const query = 'SELECT serviceskad.*, userskad.avataruser, userskad.username FROM userskad JOIN serviceskad USING(iduser)';
     return new Promise((resolve, reject) => {
       connection.query(query, (error, results) => (error ? reject(error) : resolve(h.response(
         successwithdataANDcount(results.length, 'Service berhasil ditampilkan', results)
