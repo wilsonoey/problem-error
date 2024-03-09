@@ -20,7 +20,7 @@ const init = async () => {
   });
 
   server.ext('onPreResponse', (request, h) => {
-    // mendapatkan konteks response dari request
+    
     const { response } = request;
     const id = nanoid(25);
     const createdat = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
@@ -38,7 +38,7 @@ const init = async () => {
         h.response(success('Error berhasil ditambahkan')).code(201);
       });
     }
-    // jika bukan error, lanjutkan dengan response sebelumnya (tanpa terintervensi)
+    
     return h.continue;
   });
 
