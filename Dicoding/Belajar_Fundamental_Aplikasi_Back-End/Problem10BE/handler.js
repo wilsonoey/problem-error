@@ -45,12 +45,12 @@ async function loginUser(request, h) {
             });
             await partAuth.addToken(refreshToken);
             resolve(h.response(
-              successcreatedwithdata('Login berhasil', {accessToken, refreshToken})
+              successcreatedwithdata('Success Login', {accessToken, refreshToken})
             ).code(201));
-          } else resolve(h.response(authenticationerror('Password Salah')).code(401));
+          } else resolve(h.response(authenticationerror('Wrong Password')).code(401));
         } else {
           resolve(h.response(
-            clienterror('Email tidak ditemukan. Silakan registrasi terlebih dahulu.')
+            clienterror('Email not found. Please register first.')
           ).code(400));
         }
       });
