@@ -99,15 +99,14 @@ async function registerUser(request, h) {
               resolve(h.response(
                 clienterror('Username atau email tidak boleh kosong.')
               ).code(400));
-			} else {
+            } else {
               const query = 'INSERT INTO userskad SET ?';
               connection.query(query, data, () => {
                 resolve(h.response(
                   successcreated(`User berhasil ditambahkan dengan iduser ${data.iduser}`)
                 ).code(201));
               });
-			}
-            
+            }  
           }
         }
       });
