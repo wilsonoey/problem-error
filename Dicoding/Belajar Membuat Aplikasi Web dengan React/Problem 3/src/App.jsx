@@ -1,8 +1,8 @@
-import styles from "./App.module.css"
-import { DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core"
-import { arrayMove, SortableContext, sortableKeyboardCoordinates } from "@dnd-kit/sortable"
-import { useState } from "react"
-import GameItem from "./components/game-item/GameItem"
+import styles from "./App.module.css";
+import { DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { arrayMove, SortableContext, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
+import { useEffect, useState } from "react";
+import GameItem from "./components/game-item/GameItem";
 
 const App = () => {
   const [gamesList, setGamesList] = useState([
@@ -27,15 +27,15 @@ const App = () => {
   };
 
   const reorderGamesList = e => {
-    if (!e.over) return
+    if (!e.over) return;
 
     setActiveId(null);
     setOverId(null);
     if (e.active.id !== e.over.id) {
       setGamesList(gamesList => {
-        const oldIdx = gamesList.findIndex(game => game.id === e.active.id)
-        const newIdx = gamesList.findIndex(game => game.id === e.over.id)
-        return arrayMove(gamesList, oldIdx, newIdx)
+        const oldIdx = gamesList.findIndex(game => game.id === e.active.id);
+        const newIdx = gamesList.findIndex(game => game.id === e.over.id);
+        return arrayMove(gamesList, oldIdx, newIdx);
       })
     }
   }
@@ -44,7 +44,6 @@ const App = () => {
     if (event.ctrlKey) {
       // Ctrl key logic: Toggle selection
       setSelectedComponents((prevSelected) => {
-        console.log(prevSelected);
         if (prevSelected.includes(component)) {
           return prevSelected.filter((comp) => comp !== component);
         } else {
@@ -75,7 +74,16 @@ const App = () => {
       },
     }),
   );
-  const index = gamesList.findIndex(game => game.id === overId);
+  
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedComponents([]);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+  }, [selectedComponents.length, gamesList]);
 
   return (
     <DndContext sensors={sensors} onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={reorderGamesList}>
@@ -105,8 +113,7 @@ const App = () => {
         </DragOverlay>
       </main>
     </DndContext>
-  )
+  );
 }
 
 export default App;
-
