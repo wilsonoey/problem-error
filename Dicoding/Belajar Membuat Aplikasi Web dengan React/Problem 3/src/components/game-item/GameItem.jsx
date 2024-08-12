@@ -28,4 +28,4 @@ const GameItem = props => {
   )
 }
 
-export default GameItem
+export default GameItem;
