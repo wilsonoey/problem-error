@@ -1,0 +1,31 @@
+.item {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 0.5rem;
+}
+.item:hover {
+  cursor: grab;
+}
+.item:active {
+  cursor: grabbing;
+}
+
+.item._active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border: 1px solid rgb(195, 0, 255);
+}
+.item._active._before::after {
+  top: -1px;
+  margin-top: -10px;
+}
+.item._active._after::after {
+  bottom: -1px;
+  margin-bottom: -10px;
+}
