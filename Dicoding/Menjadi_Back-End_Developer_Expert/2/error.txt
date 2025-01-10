@@ -1,0 +1,5309 @@
+[33m[nodemon] 3.0.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+server start at http://localhost:5000
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/users',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/users',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '4ecb726a-840a-4123-a3e2-0a612c4e720c',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '109'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/users',
+    payload: {
+      username: 'dicoding_1736548136',
+      password: 'secret',
+      fullname: 'Dicoding Indonesia'
+    },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/users',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/users',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548166916,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548166916:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10000',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedUser: [RegisteredUser] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+Error: REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:14:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:14:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:18:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:14:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:18:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:14:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:18:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/users',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/users',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '9c1520e4-00fb-4e87-a6c0-1e73e18eeb22',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '75'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/users',
+    payload: {
+      username: 'dicoding',
+      password: 'secret',
+      fullname: 'Dicoding Indonesia'
+    },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/users',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/users',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548169843,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548169843:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10008',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedUser: [RegisteredUser] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: REGISTER_USER.USERNAME_CONTAIN_RESTRICTED_CHARACTER
+    at RegisterUser._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:26:13)
+    at new RegisterUser (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\users\entities\RegisterUser.js:3:10)
+    at AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:10:26)
+    at UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:44)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+AuthenticationError: kredensial yang Anda masukkan salah
+    at BcryptPasswordHash.comparePassword (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\security\BcryptPasswordHash.js:19:13)
+    at async LoginUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\LoginUserUseCase.js:22:5)
+    at async postAuthenticationHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\authentications\handler.js:12:43)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 401,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak ditemukan
+    at UserRepositoryPostgres.getPasswordByUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:48:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LoginUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\LoginUserUseCase.js:20:31)
+    at async postAuthenticationHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\authentications\handler.js:12:43)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '2e4dea50-99c0-49d4-a774-a6f701fbda18',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '59'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'dicoding', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548172879,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548172879:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10017',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3M30.lELpkjlE7rVWtnjFITsTZL6d2wLAhx-k5MWg2yu5rqc',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3M30.ac8l6VjpNE46Fn_4PpT_CWFjteOzjv4Gm5bLXvgv7oQ'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'put',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '3961e49d-67e8-48aa-9549-7e4c372792b3',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '208'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'put',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: {
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3M30.ac8l6VjpNE46Fn_4PpT_CWFjteOzjv4Gm5bLXvgv7oQ'
+    },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'put',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548173825,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548173825:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10018',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3NH0.PeLnkaidIWzRRftiqgy80tcXxXuw9HEP3wj7ZlGvUsY'
+    }
+  },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: false,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: refresh token tidak valid
+    at JwtTokenManager.verifyRefreshToken (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\security\JwtTokenManager.js:23:13)
+    at RefreshAuthenticationUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\RefreshAuthenticationUseCase.js:14:44)
+    at putAuthenticationHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\authentications\handler.js:27:60)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'delete',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'a7e60a81-cf57-43e2-925b-06e0c73bd084',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '208'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'delete',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: {
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3M30.ac8l6VjpNE46Fn_4PpT_CWFjteOzjv4Gm5bLXvgv7oQ'
+    },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'delete',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548174222,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548174222:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10020',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success' },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: false,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: refresh token tidak ditemukan di database
+    at AuthenticationRepositoryPostgres.checkAvailabilityToken (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\AuthenticationRepositoryPostgres.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RefreshAuthenticationUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\RefreshAuthenticationUseCase.js:15:5)
+    at async putAuthenticationHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\authentications\handler.js:27:25)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: refresh token tidak ditemukan di database
+    at AuthenticationRepositoryPostgres.checkAvailabilityToken (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\AuthenticationRepositoryPostgres.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async LogoutUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\LogoutUserUseCase.js:11:5)
+    at async deleteAuthenticationHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\authentications\handler.js:39:5)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'a42b61dc-3500-481a-80d0-29bc8f6f2e2c',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '59'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'dicoding', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548176051,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548176051:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10025',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3Nn0.Q9gfW7U0pd3miVXtBJvXqeb35X4o4VucIjrg71w8fOY',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3Nn0.y5ZNT2kV4s_UEuDreupnlJrvdrPL6S0o61a9bSS9d9U'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+Error: Missing authentication
+    at module.exports.internals.Auth._authenticate (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\auth.js:287:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 401,
+    payload: {
+      statusCode: 401,
+      error: 'Unauthorized',
+      message: 'Missing authentication'
+    },
+    headers: { 'WWW-Authenticate': 'Bearer' }
+  }
+}
+Error: ADD_THREAD.NOT_CONTAIN_NEEDED_PROPERTY
+    at AddThread._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:13:15)
+    at new AddThread (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:3:10)
+    at AddThreadUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddThreadUseCase.js:9:23)
+    at postThreadHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\threads\handler.js:18:48)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_THREAD.NOT_CONTAIN_NEEDED_PROPERTY
+    at AddThread._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:13:15)
+    at new AddThread (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:3:10)
+    at AddThreadUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddThreadUseCase.js:9:23)
+    at postThreadHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\threads\handler.js:18:48)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_THREAD.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at AddThread._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:15:15)
+    at new AddThread (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:3:10)
+    at AddThreadUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddThreadUseCase.js:9:23)
+    at postThreadHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\threads\handler.js:18:48)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_THREAD.NOT_CONTAIN_NEEDED_PROPERTY
+    at AddThread._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:13:15)
+    at new AddThread (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:3:10)
+    at AddThreadUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddThreadUseCase.js:9:23)
+    at postThreadHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\threads\handler.js:18:48)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_THREAD.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at AddThread._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:15:15)
+    at new AddThread (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\threads\entities\AddThread.js:3:10)
+    at AddThreadUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddThreadUseCase.js:9:23)
+    at postThreadHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\threads\handler.js:18:48)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/threads',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3Nn0.Q9gfW7U0pd3miVXtBJvXqeb35X4o4VucIjrg71w8fOY',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '9b76956c-0eac-4aa7-b9a0-254e9053bcec',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '69'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/threads',
+    payload: { title: 'sebuah thread', body: 'sebuah body thread' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548177458,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548177458:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10032',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedThread: [AddedThread] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/users',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/users',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '68c4d706-58a1-48b2-92a8-1940a4f2fc08',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '87'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/users',
+    payload: { username: 'johndoe', password: 'secret', fullname: 'John Doe' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/users',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/users',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548178147,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548178147:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10034',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedUser: [RegisteredUser] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'd7ec1217-ae7b-45cf-8ed4-e9f4c303fa76',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '59'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'dicoding', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548179127,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548179127:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10036',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3OX0.t-Y__Apgl4LlG4I6FAdBtjbhdoVUW2BSf73SmASP4kM',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3OX0.kPnFGfdcMVgGwEpuN14hOo7gkRnG-U3VYEJI8bzYzro'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '145a8996-fb79-41dd-9e54-c9375338fb5c',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '58'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'johndoe', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548180358,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548180358:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10038',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6InVzZXItUjBXMXBCbV9KM1BQZkY0MVZ0eGhNIiwiaWF0IjoxNzM2NTQ4MTgwfQ.YmdPDXvou5TeWpzbW_yR7ti1Y_2LqPBX7wXQ0ga9kUY',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6InVzZXItUjBXMXBCbV9KM1BQZkY0MVZ0eGhNIiwiaWF0IjoxNzM2NTQ4MTgwfQ.2VSPOz8e3L6w0AW3UofY7XfIaEs3JN0800vjtUO8_gM'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/threads',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3OX0.t-Y__Apgl4LlG4I6FAdBtjbhdoVUW2BSf73SmASP4kM',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '0ed17d7e-2e56-449e-9df3-cdba7e732598',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '69'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/threads',
+    payload: { title: 'sebuah thread', body: 'sebuah body thread' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548181329,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548181329:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10039',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedThread: [AddedThread] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+Error: Missing authentication
+    at module.exports.internals.Auth._authenticate (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\auth.js:287:26)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 401,
+    payload: {
+      statusCode: 401,
+      error: 'Unauthorized',
+      message: 'Missing authentication'
+    },
+    headers: { 'WWW-Authenticate': 'Bearer' }
+  }
+}
+NotFoundError: thread tidak ditemukan di database
+    at ThreadRepositoryPostgres.verifyAvailableThreadById (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\ThreadRepositoryPostgres.js:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddCommentUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddCommentUseCase.js:10:5)
+    at async postCommentHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\comments\handler.js:19:26)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 404,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_COMMENT.NOT_CONTAIN_NEEDED_PROPERTY
+    at AddComment._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\comments\entities\AddComment.js:13:15)
+    at new AddComment (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\comments\entities\AddComment.js:3:10)
+    at AddCommentUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddCommentUseCase.js:11:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async postCommentHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\comments\handler.js:19:26)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_COMMENT.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at AddComment._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\comments\entities\AddComment.js:15:15)
+    at new AddComment (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\comments\entities\AddComment.js:3:10)
+    at AddCommentUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddCommentUseCase.js:11:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async postCommentHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\comments\handler.js:19:26)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?/comments',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6InVzZXItUjBXMXBCbV9KM1BQZkY0MVZ0eGhNIiwiaWF0IjoxNzM2NTQ4MTgwfQ.YmdPDXvou5TeWpzbW_yR7ti1Y_2LqPBX7wXQ0ga9kUY',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '30d144aa-51ed-4d5b-a8fa-7677ae2c4e94',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '37'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: { threadId: 'thread-AzbamnNUsBZnUdgVj8zSJ' },
+    paramsArray: [ 'thread-AzbamnNUsBZnUdgVj8zSJ' ],
+    path: '/threads/thread-AzbamnNUsBZnUdgVj8zSJ/comments',
+    payload: { content: 'sebuah comment' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?/comments',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548183092,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548183092:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10044',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedComment: [AddedComment] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?/comments',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3OX0.t-Y__Apgl4LlG4I6FAdBtjbhdoVUW2BSf73SmASP4kM',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'd7ebcbb5-ff46-4ade-b943-dc0c408cbe26',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '37'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: { threadId: 'thread-AzbamnNUsBZnUdgVj8zSJ' },
+    paramsArray: [ 'thread-AzbamnNUsBZnUdgVj8zSJ' ],
+    path: '/threads/thread-AzbamnNUsBZnUdgVj8zSJ/comments',
+    payload: { content: 'sebuah comment' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?/comments',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548183730,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548183730:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10045',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedComment: [AddedComment] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'a345c133-f10b-445e-ba63-038aeff85eb7',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'get',
+    mime: null,
+    orig: {},
+    params: { threadId: 'thread-AzbamnNUsBZnUdgVj8zSJ' },
+    paramsArray: [ 'thread-AzbamnNUsBZnUdgVj8zSJ' ],
+    path: '/threads/thread-AzbamnNUsBZnUdgVj8zSJ',
+    payload: undefined,
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548184357,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548184357:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10046',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { thread: [Object] } },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+Error: Missing authentication
+    at module.exports.internals.Auth._authenticate (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\auth.js:287:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 401,
+    payload: {
+      statusCode: 401,
+      error: 'Unauthorized',
+      message: 'Missing authentication'
+    },
+    headers: { 'WWW-Authenticate': 'Bearer' }
+  }
+}
+NotFoundError: komentar tidak tersedia
+    at CommentRepositoryPostgres.verifyAvailableCommentById (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\CommentRepositoryPostgres.js:36:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DeleteCommentUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\DeleteCommentUseCase.js:12:5)
+    at async deleteCommentHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\comments\handler.js:41:5)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 404,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+AuthorizationError: komentar ini bukan milik anda
+    at CommentRepositoryPostgres.verifyCommentByOwner (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\CommentRepositoryPostgres.js:49:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DeleteCommentUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\DeleteCommentUseCase.js:13:5)
+    at async deleteCommentHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\comments\handler.js:41:5)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 403,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'delete',
+      path: '/threads/{threadId}/comments/{commentId}',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?/comments/?',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE3OX0.t-Y__Apgl4LlG4I6FAdBtjbhdoVUW2BSf73SmASP4kM',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '6b8f58d0-0974-4164-a135-c4fa9a4a01f7',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'delete',
+    mime: 'application/json',
+    orig: {},
+    params: {
+      threadId: 'thread-AzbamnNUsBZnUdgVj8zSJ',
+      commentId: 'comment-UL5LkGy0_7bAnONp-SFtn'
+    },
+    paramsArray: [ 'thread-AzbamnNUsBZnUdgVj8zSJ', 'comment-UL5LkGy0_7bAnONp-SFtn' ],
+    path: '/threads/thread-AzbamnNUsBZnUdgVj8zSJ/comments/comment-UL5LkGy0_7bAnONp-SFtn',
+    payload: null,
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'delete',
+      path: '/threads/{threadId}/comments/{commentId}',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?/comments/?',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548186835,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548186835:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10050',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success' },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '4725535b-585d-4c86-a5c6-e7abc4fa1424',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'get',
+    mime: null,
+    orig: {},
+    params: { threadId: 'thread-AzbamnNUsBZnUdgVj8zSJ' },
+    paramsArray: [ 'thread-AzbamnNUsBZnUdgVj8zSJ' ],
+    path: '/threads/thread-AzbamnNUsBZnUdgVj8zSJ',
+    payload: undefined,
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548187987,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548187987:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10051',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { thread: [Object] } },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'c34e7a76-3d98-45b8-9450-5d6f950836e2',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '59'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'dicoding', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548189883,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548189883:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10055',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE5MH0._Bwa-aipA09JsLGGf6isEigtwX4tUmxPJnkg-lyL3xw',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE5MH0.eVzs7uvtwJ0a1SQblBpGphcHyd9ongIJgI2u0NzHqhg'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+InvariantError: username tidak tersedia
+    at UserRepositoryPostgres.verifyAvailableUsername (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\UserRepositoryPostgres.js:21:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddUserUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddUserUseCase.js:11:5)
+    at async UsersHandler.postUserHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\users\handler.js:12:23)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 400,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/authentications',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/authentications',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '39465564-6a5a-46ce-8c6c-c8380325b913',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '58'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/authentications',
+    payload: { username: 'johndoe', password: 'secret' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/authentications',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/authentications',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548191186,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548191186:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10057',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: {
+    status: 'success',
+    data: {
+      accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6InVzZXItUjBXMXBCbV9KM1BQZkY0MVZ0eGhNIiwiaWF0IjoxNzM2NTQ4MTkxfQ.tNpQh8bo3s_FZcSZ7FNv0f5PCxCaDnBXmBPZv4DWQeA',
+      refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6InVzZXItUjBXMXBCbV9KM1BQZkY0MVZ0eGhNIiwiaWF0IjoxNzM2NTQ4MTkxfQ.C4Kyl3L7xlBEYDBcQYPprF2GZ_Bpq_bclHuNglRfOMQ'
+    }
+  },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [],
+      fingerprint: '/threads',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE5MH0._Bwa-aipA09JsLGGf6isEigtwX4tUmxPJnkg-lyL3xw',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '41c8e7f5-fd74-40d7-b854-4386d566a663',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '69'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: {},
+    paramsArray: [],
+    path: '/threads',
+    payload: { title: 'sebuah thread', body: 'sebuah body thread' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548192167,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548192167:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10058',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedThread: [AddedThread] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?/comments',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE5MH0._Bwa-aipA09JsLGGf6isEigtwX4tUmxPJnkg-lyL3xw',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '0b6651b6-1225-4652-8223-7523d7448029',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '37'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: { threadId: 'thread-l2QwPY0x7dn-Wwa3KFnDS' },
+    paramsArray: [ 'thread-l2QwPY0x7dn-Wwa3KFnDS' ],
+    path: '/threads/thread-l2QwPY0x7dn-Wwa3KFnDS/comments',
+    payload: { content: 'sebuah comment' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?/comments',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548192516,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548192516:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10059',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedComment: [AddedComment] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?/comments',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'content-type': 'application/json',
+      authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpY29kaW5nIiwiaWQiOiJ1c2VyLUVRQjRhR3dLcmpHREZQSkJNckRacSIsImlhdCI6MTczNjU0ODE5MH0._Bwa-aipA09JsLGGf6isEigtwX4tUmxPJnkg-lyL3xw',
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'f404a691-d5a7-4ed2-9201-b3eb0fb6733c',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive',
+      'content-length': '37'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'post',
+    mime: 'application/json',
+    orig: {},
+    params: { threadId: 'thread-l2QwPY0x7dn-Wwa3KFnDS' },
+    paramsArray: [ 'thread-l2QwPY0x7dn-Wwa3KFnDS' ],
+    path: '/threads/thread-l2QwPY0x7dn-Wwa3KFnDS/comments',
+    payload: { content: 'sebuah comment' },
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'post',
+      path: '/threads/{threadId}/comments',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?/comments',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548193105,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548193105:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10060',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: true,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: [Object],
+      artifacts: [Object],
+      strategy: 'forum_api_jwt',
+      mode: 'required',
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { addedComment: [AddedComment] } },
+  statusCode: 201,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+Error: Missing authentication
+    at module.exports.internals.Auth._authenticate (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\auth.js:287:26)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 401,
+    payload: {
+      statusCode: 401,
+      error: 'Unauthorized',
+      message: 'Missing authentication'
+    },
+    headers: { 'WWW-Authenticate': 'Bearer' }
+  }
+}
+NotFoundError: thread tidak ditemukan di database
+    at ThreadRepositoryPostgres.verifyAvailableThreadById (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\ThreadRepositoryPostgres.js:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddReplyUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddReplyUseCase.js:11:5)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 404,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+NotFoundError: komentar tidak tersedia
+    at CommentRepositoryPostgres.verifyAvailableCommentById (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\CommentRepositoryPostgres.js:36:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddReplyUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddReplyUseCase.js:12:5)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 404,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_REPLY.NOT_CONTAIN_NEEDED_PROPERTY
+    at AddReply._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\replies\entities\AddReply.js:13:15)
+    at new AddReply (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\replies\entities\AddReply.js:3:10)
+    at AddReplyUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddReplyUseCase.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: ADD_REPLY.NOT_MEET_DATA_TYPE_SPECIFICATION
+    at AddReply._verifyPayload (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\replies\entities\AddReply.js:15:15)
+    at new AddReply (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Domains\replies\entities\AddReply.js:3:10)
+    at AddReplyUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\AddReplyUseCase.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+AddReply {
+  commentId: 'comment--dF6_fe7yOUYZguI5InQ0',
+  content: 'sebuah balasan',
+  owner: 'user-R0W1pBm_J3PPfF41VtxhM'
+}
+error: null value in column "comment_id" of relation "comment_replies" violates not-null constraint
+    at D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ReplyRepositoryPostgres.addReply (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\ReplyRepositoryPostgres.js:23:20)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  length: 357,
+  severity: 'ERROR',
+  code: '23502',
+  detail: 'Failing row contains (reply-NJLcZcEbUPHroCmmnPxG6, sebuah balasan, user-R0W1pBm_J3PPfF41VtxhM, comment--dF6_fe7yOUYZguI5InQ0, null, 2025-01-10 22:29:56.679403, f).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'comment_replies',
+  column: 'comment_id',
+  dataType: undefined,
+  constraint: undefined,
+  file: 'execMain.c',
+  line: '1968',
+  routine: 'ExecConstraints',
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+AddReply {
+  commentId: 'comment--dF6_fe7yOUYZguI5InQ0',
+  content: 'sebuah balasan',
+  owner: 'user-EQB4aGwKrjGDFPJBMrDZq'
+}
+error: null value in column "comment_id" of relation "comment_replies" violates not-null constraint
+    at D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ReplyRepositoryPostgres.addReply (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\ReplyRepositoryPostgres.js:23:20)
+    at async postReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:20:24)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  length: 357,
+  severity: 'ERROR',
+  code: '23502',
+  detail: 'Failing row contains (reply-hRrbxYueqvv1QO9NUjICy, sebuah balasan, user-EQB4aGwKrjGDFPJBMrDZq, comment--dF6_fe7yOUYZguI5InQ0, null, 2025-01-10 22:29:58.650252, f).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'comment_replies',
+  column: 'comment_id',
+  dataType: undefined,
+  constraint: undefined,
+  file: 'execMain.c',
+  line: '1968',
+  routine: 'ExecConstraints',
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': 'e9ca047b-11d3-44d2-9117-75d04142945c',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'get',
+    mime: null,
+    orig: {},
+    params: { threadId: 'thread-l2QwPY0x7dn-Wwa3KFnDS' },
+    paramsArray: [ 'thread-l2QwPY0x7dn-Wwa3KFnDS' ],
+    path: '/threads/thread-l2QwPY0x7dn-Wwa3KFnDS',
+    payload: undefined,
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548198853,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548198853:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10068',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { thread: [Object] } },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
+NotFoundError: balasan tidak tersedia
+    at ReplyRepositoryPostgres.verifyAvailableReplyById (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Infrastructures\repository\ReplyRepositoryPostgres.js:37:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DeleteReplyUseCase.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Applications\use_case\DeleteReplyUseCase.js:20:5)
+    at async deleteReplyHandler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\src\Interfaces\http\api\replies\handler.js:42:5)
+    at async exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:60:28)
+    at async internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:20)
+    at async exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:20)
+    at async Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:32)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  statusCode: 404,
+  isBoom: true,
+  isServer: true,
+  data: null,
+  output: {
+    statusCode: 500,
+    payload: {
+      statusCode: 500,
+      error: 'Internal Server Error',
+      message: 'An internal server error occurred'
+    },
+    headers: {}
+  }
+}
+Error: Not Found
+    at internals.notFound (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\core.js:681:16)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 404,
+    payload: { statusCode: 404, error: 'Not Found', message: 'Not Found' },
+    headers: {}
+  }
+}
+Error: Not Found
+    at internals.notFound (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\core.js:681:16)
+    at exports.Manager.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\toolkit.js:57:29)
+    at internals.handler (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:46:48)
+    at exports.execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\handler.js:31:36)
+    at Request._lifecycle (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:371:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Request._execute (D:\Dicoding_Indonesia_files\Backend\Menjadi Back-End Developer Expert\deployment\node_modules\@hapi\hapi\lib\request.js:281:9) {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 404,
+    payload: { statusCode: 404, error: 'Not Found', message: 'Not Found' },
+    headers: {}
+  }
+}
+<ref *2> Response {
+  app: {},
+  headers: {},
+  plugins: {},
+  request: <ref *1> Request {
+    _allowInternals: false,
+    _closed: false,
+    _core: {
+      actives: [WeakMap],
+      app: {},
+      auth: [Object],
+      caches: [Map],
+      compression: [Object],
+      controlled: null,
+      dependencies: [],
+      events: [Object],
+      heavy: [Object],
+      info: [Object],
+      instances: [Set],
+      listener: [Server],
+      methods: [Object],
+      mime: Mimos {},
+      onConnection: [Function (anonymous)],
+      phase: 'started',
+      plugins: [Object],
+      registrations: [Object],
+      registring: 0,
+      Request: [class Request],
+      Response: [class Response],
+      requestCounter: [Object],
+      root: [Object],
+      router: [Object],
+      settings: [Object],
+      sockets: [Set],
+      started: true,
+      states: [Object],
+      toolkit: [Object],
+      type: 'tcp',
+      validator: null,
+      extensionsSeq: 14,
+      extensions: [Object],
+      decorations: [Object]
+    },
+    _entity: null,
+    _eventContext: { request: [Circular *1] },
+    _events: null,
+    _expectContinue: false,
+    _isInjected: false,
+    _isPayloadPending: false,
+    _isReplied: true,
+    _route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      settings: [Object],
+      _core: [Object],
+      realm: [Object],
+      _special: false,
+      _analysis: [Object],
+      params: [Array],
+      fingerprint: '/threads/?',
+      public: [Object],
+      _prerequisites: null,
+      _extensions: [Object],
+      _cycle: [Array],
+      _postCycle: [Array],
+      _marshalCycle: [Array]
+    },
+    _serverTimeoutId: null,
+    _states: {},
+    _url: null,
+    _urlError: null,
+    app: {},
+    headers: {
+      'user-agent': 'PostmanRuntime/7.43.0',
+      accept: '*/*',
+      'cache-control': 'no-cache',
+      'postman-token': '7201d675-63f2-4faa-9e3f-a58a7e542135',
+      host: 'localhost:5000',
+      'accept-encoding': 'gzip, deflate, br',
+      connection: 'keep-alive'
+    },
+    jsonp: null,
+    logs: [],
+    method: 'get',
+    mime: null,
+    orig: {},
+    params: { threadId: 'thread-l2QwPY0x7dn-Wwa3KFnDS' },
+    paramsArray: [ 'thread-l2QwPY0x7dn-Wwa3KFnDS' ],
+    path: '/threads/thread-l2QwPY0x7dn-Wwa3KFnDS',
+    payload: undefined,
+    plugins: {},
+    pre: {},
+    preResponses: {},
+    raw: { req: [IncomingMessage], res: [ServerResponse] },
+    response: [Circular *2],
+    route: {
+      method: 'get',
+      path: '/threads/{threadId}',
+      vhost: undefined,
+      realm: [Object],
+      settings: [Object],
+      fingerprint: '/threads/?',
+      auth: [Object]
+    },
+    query: [Object: null prototype] {},
+    server: {
+      _core: [Object],
+      app: {},
+      auth: [Object],
+      decorations: [Object],
+      cache: [Function],
+      events: [Object],
+      info: [Object],
+      listener: [Server],
+      load: [Object],
+      methods: {},
+      mime: Mimos {},
+      plugins: [Object],
+      registrations: [Object],
+      settings: [Object],
+      states: [Object],
+      type: 'tcp',
+      version: '20.3.0',
+      realm: [Object]
+    },
+    state: {},
+    info: {
+      _request: [Circular *1],
+      received: 1736548201474,
+      referrer: '',
+      host: 'localhost:5000',
+      hostname: 'localhost',
+      id: '1736548201474:LAPTOP-5TKT5QVH:14420:m5rb8dnv:10072',
+      _remoteAddress: null,
+      _remotePort: null,
+      acceptEncoding: 'gzip',
+      cors: null,
+      responded: 0,
+      completed: 0
+    },
+    auth: {
+      isAuthenticated: false,
+      isAuthorized: false,
+      isInjected: false,
+      credentials: null,
+      artifacts: null,
+      strategy: null,
+      mode: null,
+      error: null,
+      [Symbol(auth.payload)]: true
+    }
+  },
+  source: { status: 'success', data: { thread: [Object] } },
+  statusCode: 200,
+  variety: 'plain',
+  settings: {
+    charset: 'utf-8',
+    compressed: null,
+    encoding: 'utf8',
+    message: null,
+    passThrough: true,
+    stringify: null,
+    ttl: null,
+    varyEtag: false
+  },
+  _events: null,
+  _payload: null,
+  _error: null,
+  _contentType: 'application/json',
+  _takeover: false,
+  _statusCode: true,
+  _state: 'prepare',
+  _processors: { marshal: undefined, prepare: undefined, close: undefined }
+}
